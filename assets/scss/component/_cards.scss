@@ -1,0 +1,46 @@
+// Card styles goes here
+.card-lg{
+    height: 250px;
+    border-radius:$card-border-radius;
+    background-color: $card-lg-primary;
+    
+    .card{
+        background-color: $card-lg-primary;
+        border: none;
+
+        .card-text{
+            color: $cart-text-color;
+            font-size: 1rem;
+        }
+    }
+}
+.icon-container{
+    background-color:$card-lg-secondary ;
+    margin-bottom: 0;
+
+    .card-lg-icon{
+        font-size: $icon-size;
+    }
+    
+}
+.cards-sec-2{
+    height: 350px;
+
+    .card-height{
+        height: 150px;
+    }
+}
+
+.card-sales{
+background-color: $card-sm-bg-primary;
+}
+
+.card-profits{
+    background-color: $card-sm-bg-secondary;
+}
+.card-orders{
+    background-color: $card-sm-bg-tertiary;
+}
+.card-visits{
+    background-color: $card-sm-bg-quaternary;
+}

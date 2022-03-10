@@ -1,0 +1,47 @@
+// Theme Primary Color
+$primary: #000000;
+
+// Mainly use for UI controls like Buttons
+$secondary: #ffffff;
+
+// Secondary-text colors
+$tertiary: #949694;
+
+// Used for Footer Section
+$accent: #eaeaea;
+
+// cards
+$warning: #c38960;
+$success: #88be8f;
+$info: #8dc2cf; 
+
+
+// Mainly use for Normal Text color
+
+// Dedicated for button text only
+$btn-text-primary: $primary;
+
+// $theme-colors: (
+//   "primary": $primary,
+//   "secondary": $secondary,
+//   "accent": $accent,
+//   // "info": $info
+// );
+
+// cards-lg
+$card-lg-primary: #f9f8f3;
+$card-lg-secondary: #e5e1d7;
+$cart-text-color: #949694;
+
+// cards-sm
+$card-sm-bg-primary: #ffefe2;
+$card-sm-bg-secondary: #eefcef;
+$card-sm-bg-tertiary: #e6f5fa;
+$card-sm-bg-quaternary: #f4f5f9;
+
+$card-sm-theme: (
+  "card-primary":$card-sm-bg-primary,
+  "card-secondary":$card-sm-bg-secondary,
+  "card-tertiary":$card-sm-bg-tertiary,
+  "card-quaternary":$card-sm-bg-quaternary,
+);

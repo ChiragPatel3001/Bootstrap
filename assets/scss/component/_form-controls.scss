@@ -1,0 +1,29 @@
+// Form controls styles goes here
+.search-sec {
+    margin-top: 15px;
+
+    .search-bar {
+        background-color: $secondary;
+        border: 2px solid $accent;
+        padding-left: 45px;
+        border-radius: 15px;
+    }
+    .searchbar {
+        background-color: $secondary;
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+}
+#search {
+    position: absolute;
+    padding-left: 15px;
+
+    .icon-Search {
+        cursor: pointer;
+    }
+}
+input {
+    height: 45px;
+    width: 500px;
+}

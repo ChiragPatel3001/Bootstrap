@@ -1,0 +1,21 @@
+.sidebar{
+    width: 280px;
+    background-color: $secondary;
+    transition: all 0.4s ease;
+    overflow: auto;
+    border-right: 2px solid $accent;
+    
+    .side-nav-item{
+        border-left: 3px solid transparent;
+        
+        &:hover,
+        &.active{
+            border-left: 3px solid $primary;
+        }
+    }
+
+    .image-container{
+        border: 2px solid $accent;
+        border-radius: 25%;
+    }
+}
