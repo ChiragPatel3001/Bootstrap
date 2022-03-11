@@ -13,10 +13,15 @@
             font-size: 1rem;
         }
     }
+    .card-rate{
+        font-size: 2.5rem;
+    }
 }
 .icon-container{
-    background-color:$card-lg-secondary ;
+    background-color:$card-lg-secondary;
     margin-bottom: 0;
+    height: 56px;
+    width: 56px;
 
     .card-lg-icon{
         font-size: $icon-size;

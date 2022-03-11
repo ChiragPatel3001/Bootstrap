@@ -8,178 +8,295 @@
     <title>Bootstrap Practice</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/icons/style.css">
-    <style>
+    <!-- <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-    </style>
+    </style> -->
 </head>
 
 <body>
     <!-- main wrapper: Start -->
     <main class="d-flex h-100 wrapper">
         <!-- Sidebar: Start -->
-        <aside class="sidebar d-flex flex-column">
+        <aside class="sidebar d-flex flex-column overflow-auto position-relative flex-shrink-0">
             <div class="px-4 py-4"><span class="icon-grid fs-1 ps-2"></span></div>
             <nav class="d-flex flex-column flex-grow-1">
                 <ul class="list-group">
-                    <li class="side-nav-item d-flex text-center py-3 list-group-item"><a href="#"
+                    <li class="side-nav-item mb-2 d-flex text-center py-3 list-group-item active"><a href="#"
                             class="text-decoration-none "><span
-                                class="icon-home fs-5 text-decoration-none px-4"></span>Home</a></li>
-                    <li class="side-nav-item d-flex text-center py-3 list-group-item"><a href="#"
+                                class="icon-home sidebar-icon fs-5 text-decoration-none px-4"></span>Home</a></li>
+                    <li class="side-nav-item mb-2 d-flex text-center py-3 list-group-item"><a href="#"
                             class="text-decoration-none"><span
-                                class="icon-trophie fs-5 text-decoration-none px-4"></span>Projects</a></li>
-                    <li class="side-nav-item d-flex text-center py-3 list-group-item"><a href="#"
+                                class="icon-trophie sidebar-icon fs-5 text-decoration-none px-4"></span>Projects</a>
+                    </li>
+                    <li class="side-nav-item mb-2 d-flex text-center py-3 list-group-item"><a href="#"
                             class="text-decoration-none"><span
-                                class="icon-library fs-5 text-decoration-none px-4"></span>Billings</a></li>
-                    <li class="side-nav-item d-flex text-center py-3 list-group-item"><a href="#"
+                                class="icon-library sidebar-icon fs-5 text-decoration-none px-4"></span>Billings</a>
+                    </li>
+                    <li class="side-nav-item mb-2 d-flex text-center py-3 list-group-item"><a href="#"
                             class="text-decoration-none"><span
-                                class="icon-user fs-5 text-decoration-none px-4"></span>Team Members</a></li>
-                    <li class="side-nav-item d-flex text-center py-3 list-group-item"><a href="#"
+                                class="icon-user sidebar-icon fs-5 text-decoration-none px-4"></span>Team Members</a>
+                    </li>
+                    <li class="side-nav-item mb-2 d-flex text-center py-3 list-group-item"><a href="#"
                             class="text-decoration-none"><span
-                                class="icon-chart fs-5 text-decoration-none px-4"></span>Stats</a></li>
-                    <li class="side-nav-item d-flex text-center py-3 list-group-item"><a href="#"
+                                class="icon-chart sidebar-icon fs-5 text-decoration-none px-4"></span>Stats</a></li>
+                    <li class="side-nav-item mb-2 d-flex text-center py-3 list-group-item"><a href="#"
                             class="text-decoration-none"><span
-                                class="icon-settings fs-5 text-decoration-none px-4"></span>Settings</a></li>
-
+                                class="icon-settings sidebar-icon fs-5 text-decoration-none px-4"></span>Settings</a>
+                    </li>
                 </ul>
             </nav>
             <div class="d-flex flex-column align-items-center pb-5">
-                <figure class=" image-container px-2 py-2"><img class="avatar"
-                        src="/assets/images/c1f880294796422423807826aa2e47bc89a976e1.jpeg" alt=""></figure>
-                <span class="bg-"><strong> David Milan </strong></span>
+                <figure class=" image-container px-2 py-2 position-relative"><img class="avatar"
+                        src="/assets/images/c1f880294796422423807826aa2e47bc89a976e1.jpeg" alt="">
+                    <span class="bg-success active-circle position-absolute rounded-pill bottom-0 right-0"></span>
+                </figure>
+                <span><strong> Chirag Patel </strong></span>
             </div>
         </aside>
         <!-- Sidebar: End -->
 
         <!-- MainSection: Start -->
         <section class="d-flex body-wrapper overflow-auto">
-            <div class="row w-100">
-            <!-- Cards Section: Start -->
-            <div class="cards-sec col-8">
-                <div class="search-sec">
-                    <div class="searchbar d-flex align-items-center">
-                        <label id="search" for="searchBar"><span class="icon-search fs-5"></span></label>
-                        <input type="search" id="searchBar" name="search" class="search-bar"
-                            placeholder="Search for stats">
-                    </div>
-                </div>
-                <div class="card-sec-1 mt-5">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <h2 class="fw-bold">Hello David</h2>
-                            <span class="subtitle">Welcome Back!</span>
-                        </div>
-                        <div>
-                            <div class="border btn px-3 d-flex justify-content-between align-items-center">
-                                Filters
-                                <span class="icon-filter ps-3"></span>
-                            </div>
+            <div class="d-flex  flex-grow-1 flex-column flex-xl-row">
+                <!-- Cards Section: Start -->
+                <div class="cards-sec flex-grow-1">
+                    <div class="search-sec">
+                        <div class="searchbar d-flex align-items-center">
+                            <label id="search" for="searchBar"><span class="icon-search fs-5"></span></label>
+                            <input type="search" id="searchBar" name="search" class="search-bar"
+                                placeholder="Search for stats">
                         </div>
                     </div>
-                    <div class="card-lg mt-4 d-flex">
-                        <div class="card col-4 px-3 py-4">
-                            <div class="d-flex ms-3">
-                                <figure
-                                    class="px-3 rounded-circle py-3 d-flex justify-content-center align-items-center icon-container">
-                                    <span class="icon-eye card-lg-icon"></span>
-                                </figure>
+                    <div class="card-sec-1 mt-5">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <!-- Greeting user Title-->
+                                <h2 class="fw-bold">Hello Chirag</h2>
+                                <!-- Greeting user Subtitle-->
+                                <span class="text-muted">Welcome Back!</span>
                             </div>
-                            <div class="d-flex flex-column px-3 py-3 text-align-left">
-                                <span class="py-1 card-text">Views</span>
-                                <h3 class="py-1 fw-bold fs-1">500</h3>
-                                <span class="py-1 card-text">Per Day</span>
-                            </div>
-                        </div>
-                        <div class="card col-4 px-3 py-4">
-                            <div class="d-flex ms-3">
-                                <figure
-                                    class="px-3 rounded-circle py-3 d-flex justify-content-center align-items-center icon-container">
-                                    <span class="icon-compass card-lg-icon"></span>
-                                </figure>
-                            </div>
-                            <div class="d-flex flex-column px-3 py-3 text-align-left">
-                                <span class="py-1 card-text">Visits</span>
-                                <h3 class="py-1 fw-bold fs-1">2000</h3>
-                                <span class="py-1 card-text">Per minutes</span>
-                            </div>
-                        </div>
-                        <div class="card col-4 px-3 py-4">
-                            <div class="d-flex ms-3">
-                                <figure
-                                    class="px-3 rounded-circle py-3 d-flex justify-content-center align-items-center icon-container">
-                                    <span class="icon-shop card-lg-icon"></span>
-                                </figure>
-                            </div>
-                            <div class="d-flex flex-column px-3 py-3 text-align-left">
-                                <span class="py-1 card-text">Orders</span>
-                                <h3 class="py-1 fw-bold fs-1">5100</h3>
-                                <span class="py-1 card-text">Per Day</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cards-sec-2 mt-5 d-grid w-100 col-12">
-                    
-                    <div class="row g-5">
-                        <div class="col-6">
-                        <div class="card card-sales card-height border-0 d-flex flex-column p-4">
-                            <div class="d-flex flex-column">
-                                <h4 class="fw-bold">Sales</h4>
-                                <span class="subtitle">Total Sales Today</span>
-                                <h5 class="fw-bold">$500</h5>
-                            </div>
-                            <div class="d-flex">
-                                <span class=""></span>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-6">
-                        <div class="card card-profits card-height border-0 d-flex p-4">
-                            <div class="d-flex flex-column w-50">
-                                <h4 class="fw-bold">Profits</h4>
-                                <span class="subtitle">Per day ratio</span>
-                                <h5 class="fw-bold">$150</h5>
-                            </div>
-                            <div class="d-flex w-50">
-                                <span class=""></span>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-6">
-                        <div class="card card-orders card-height border-0 d-flex flex-column p-4">
-                            <div class="d-flex flex-column">
-                                <h4 class="fw-bold">Orders</h4>
-                                <span class="subtitle">Total Order Today</span>
-                                <h5 class="fw-bold">1000</h5>
-                            </div>
-                            <div class="d-flex">
-                                <span class=""></span>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-6">
-                        <div class="card card-visits card-height border-0 d-flex flex-column p-4">
-                            <div class="d-flex flex-column">
-                                <h4 class="fw-bold">Visits</h4>
-                                <span class="subtitle">Total Visit Today</span>
-                                <h5 class="fw-bold">400</h5>
-                            </div>
-                            <div class="d-flex">
-                                <span class=""></span>
-                            </div>
-                        </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <!-- Cards Section: end -->
 
-            <!-- Statistics Section: Start -->
-            <div class="insights col-4 ">
-                <div class="sales-revenue"></div>
-                <div class="statistics"></div>
+                            <!-- Filter Section : Start-->
+                            <div>
+                                <div class="border btn px-3 d-flex justify-content-between align-items-center">
+                                    Filters
+                                    <span class="icon-filter ps-3"></span>
+                                </div>
+                            </div>
+                            <!-- Filter Section : End-->
+                        </div>
+                        <!-- Section Large Card : Start -->
+                        <div class="card-lg mt-4 d-flex">
+                            <!-- Large Card Part 1 -->
+                            <div class="card col-4 px-3 py-4">
+                                <div class="d-flex ms-3">
+                                    <figure
+                                        class="rounded-circle d-flex justify-content-center align-items-center icon-container">
+                                        <span class="icon-eye card-lg-icon"></span>
+                                    </figure>
+                                </div>
+                                <div class="d-flex flex-column px-3 py-3 text-align-left">
+                                    <span class="py-1 text-muted">Views</span>
+                                    <h3 class="card-rate fw-bold">500</h3>
+                                    <span class="py-1 text-muted">Per Day</span>
+                                </div>
+                            </div>
+
+                            <!-- Large Card Part 2 -->
+                            <div class="card col-4 px-3 py-4">
+                                <div class="d-flex ms-3">
+                                    <figure
+                                        class="rounded-circle d-flex justify-content-center align-items-center icon-container">
+                                        <span class="icon-compass card-lg-icon"></span>
+                                    </figure>
+                                </div>
+                                <div class="d-flex flex-column px-3 py-3 text-align-left">
+                                    <span class="py-1 text-muted">Visits</span>
+                                    <h3 class="card-rate fw-bold">2000</h3>
+                                    <span class="py-1 text-muted">Per minutes</span>
+                                </div>
+                            </div>
+
+                            <!-- Large Card Part 3 -->
+                            <div class="card col-4 px-3 py-4">
+                                <div class="d-flex ms-3">
+                                    <figure
+                                        class="rounded-circle d-flex justify-content-center align-items-center icon-container">
+                                        <span class="icon-shop card-lg-icon"></span>
+                                    </figure>
+                                </div>
+                                <div class="d-flex flex-column px-3 py-3 text-align-left">
+                                    <span class="py-1 text-muted">Orders</span>
+                                    <h3 class="card-rate fw-bold">5100</h3>
+                                    <span class="py-1 text-muted">Per Day</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section Large Card : End -->
+                    <!-- Section Small Cards : Start -->
+                    <div class="cards-sec-2 mt-5 d-grid w-100 col-12">
+                        <div class="row gy-0">
+
+                            <!-- Card 1 :Start-->
+                            <div class="col-6">
+                                <div class="card card-sales card-height border-0 d-flex flex-column p-4">
+                                    <div class="d-flex flex-column">
+                                        <h4 class="fw-bold">Sales</h4>
+                                        <span class="subtitle pb-3">Total Sales Today</span>
+                                        <h5 class="fw-bold">$500</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class=""></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 :Start-->
+                            <div class="col-6">
+                                <div class="card card-profits card-height border-0 d-flex p-4">
+                                    <div class="d-flex flex-column w-50">
+                                        <h4 class="fw-bold">Profits</h4>
+                                        <span class="subtitle pb-3">Per day ratio</span>
+                                        <h5 class="fw-bold">$150</h5>
+                                    </div>
+                                    <div class="d-flex w-50">
+                                        <span class=""></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 :Start-->
+                            <div class="col-6">
+                                <div class="card card-orders card-height border-0 d-flex flex-column p-4">
+                                    <div class="d-flex flex-column">
+                                        <h4 class="fw-bold">Orders</h4>
+                                        <span class="subtitle pb-3">Total Order Today</span>
+                                        <h5 class="fw-bold">1000</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class=""></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 :Start-->
+                            <div class="col-6">
+                                <div class="card card-visits card-height border-0 d-flex flex-column p-4">
+                                    <div class="d-flex flex-column">
+                                        <h4 class="fw-bold">Visits</h4>
+                                        <span class="subtitle pb-3">Total Visit Today</span>
+                                        <h5 class="fw-bold">400</h5>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class=""></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Section Small Cards : End -->
+                </div>
+                <!-- Cards Section: end -->
+
+                <!-- Statistics Section: Start -->
+                <div class="insights text-secondary h-100 ps-5">
+                    <div class="card p-5 h-100 bg-primary">
+                        <div class="sales-revenue d-flex flex-column">
+                            <h6>Sales Revenue</h6>
+
+                            <!-- Card 1 : Start-->
+                            <div class="card-wrapper mt-3">
+                                <div class="card bg-primary d-flex flex-row justify-content-between">
+                                    <div
+                                        class="rounded-circle d-flex justify-content-center align-items-center icon-container bg-secondary">
+                                        <span class="py-3 px-2 icon-discout card-lg-icon text-primary"></span>
+                                    </div>
+                                    <div class="w-50 d-flex flex-column pe-4">
+                                        <h6>230k</h6>
+                                        <span class="subtitle">Sales</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 1 : End-->
+
+                            <!-- Card 2 : Start-->
+                            <div class="card-wrapper mt-4">
+                                <div class="card bg-primary d-flex flex-row justify-content-between">
+                                    <div
+                                        class="rounded-circle d-flex justify-content-center align-items-center icon-container bg-secondary">
+                                        <span class="py-3 px-2 icon-Profile2 card-lg-icon text-primary"></span>
+                                    </div>
+                                    <div class="w-50 d-flex flex-column pe-4">
+                                        <h6>8.549k</h6>
+                                        <span class="subtitle">Customers</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 : End-->
+
+                            <!-- Card 3 : Start-->
+                            <div class="card-wrapper mt-4">
+                                <div class="card bg-primary d-flex flex-row justify-content-between">
+                                    <div
+                                        class="rounded-circle d-flex justify-content-center align-items-center icon-container bg-secondary">
+                                        <span class="py-3 px-2 icon-products card-lg-icon text-primary"></span>
+                                    </div>
+                                    <div class="w-50 d-flex flex-column pe-4">
+                                        <h6>1.423k</h6>
+                                        <span class="subtitle">Products</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 : End-->
+
+                            <!-- Card 4 : Start-->
+                            <div class="card-wrapper mt-4">
+                                <div class="card bg-primary d-flex flex-row justify-content-between">
+                                    <div
+                                        class="rounded-circle d-flex justify-content-center align-items-center icon-container bg-secondary">
+                                        <span class="py-3 px-2 icon-pie-chart card-lg-icon text-primary"></span>
+                                    </div>
+                                    <div class="w-50 d-flex flex-column pe-4">
+                                        <h6>$9745</h6>
+                                        <span class="subtitle">Revenue</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 4 : End-->
+
+                        </div>
+                        <!-- Statistics: Start -->
+                        <div class="statistics mt-5 h-50">
+                            <h6>Statistics</h6>
+                            <!-- <div class="d-flex flex-row stats-chart justify-content-evenly h-50">
+                                <span class="stats-wrapper d-flex flex-row ">
+                                    <span
+                                        class="p-2 bg-secondary stats-content position-absolute bottom-0 container-1-h mt-5"></span>
+                                </span>
+                                <span class="stats-wrapper d-flex flex-row">
+                                    <span
+                                        class="p-2 stats-content position-absolute bottom-0 container-3-h mt-5"></span>
+                                </span>
+                                <span class="stats-wrapper d-flex flex-row">
+                                    <span
+                                        class="p-2 bg-secondary stats-content position-absolute bottom-0 container-2-h mt-5"></span>
+                                </span>
+                                <span class="stats-wrapper d-flex flex-row">
+                                    <span
+                                        class="p-2 stats-content position-absolute bottom-0 container-3-h mt-5"></span>
+                                </span>
+                                <span class="stats-wrapper d-flex flex-row">
+                                    <span
+                                        class="p-2 bg-secondary stats-content position-absolute bottom-0 container-1-h mt-5"></span>
+                                </span>
+                                </span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
         </section>
         <!-- MainSection: End -->
     </main>

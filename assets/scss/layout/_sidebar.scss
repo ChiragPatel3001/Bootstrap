@@ -1,8 +1,8 @@
 .sidebar{
-    width: 280px;
+    width: 300px;
     background-color: $secondary;
     transition: all 0.4s ease;
-    overflow: auto;
+    
     border-right: 2px solid $accent;
     
     .side-nav-item{
@@ -10,6 +10,7 @@
         
         &:hover,
         &.active{
+            background-color: $secondary;
             border-left: 3px solid $primary;
         }
     }
@@ -18,4 +19,9 @@
         border: 2px solid $accent;
         border-radius: 25%;
     }
+}
+.active-circle{
+    height: 15px;
+    width: 15px;
+    border: 2px solid $secondary;
 }
